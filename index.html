@@ -6,12 +6,24 @@
     <title>ANF MULTIMEDIA</title>
 
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
         body {
             margin: 0;
             font-family: "Poppins", sans-serif;
-            background: linear-gradient(135deg, #0a0a0f, #12121f, #1b1b2f);
             color: white;
             text-align: center;
+
+            /* BACKGROUND BERGERAK */
+            background: linear-gradient(120deg, #0a0a0f, #001a33, #1b0033, #0a001a);
+            background-size: 400% 400%;
+            animation: bergerak 12s ease infinite;
+        }
+
+        @keyframes bergerak {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
 
         .container {
@@ -30,7 +42,7 @@
             font-size: 42px;
             font-weight: 700;
             margin-bottom: 40px;
-            text-shadow: 0 0 12px rgba(0, 150,255, 0.7);
+            text-shadow: 0 0 14px rgba(0, 150,255, 0.9);
         }
 
         .menu-box {
@@ -39,6 +51,7 @@
             max-width: 380px;
             padding: 25px;
             border-radius: 18px;
+
             background: rgba(255, 255, 255, 0.06);
             backdrop-filter: blur(10px);
             box-shadow: 0 0 25px rgba(0, 150,255, 0.3);
@@ -50,6 +63,7 @@
             padding: 14px 35px;
             font-size: 22px;
             color: white;
+
             background: rgba(0, 150,255, 0.4);
             border-radius: 10px;
             text-decoration: none;
@@ -59,7 +73,24 @@
 
         .btn:hover {
             background: rgba(0, 150,255, 0.7);
-            box-shadow: 0 0 15px rgba(0,150,255,0.7);
+            box-shadow: 0 0 15px rgba(0,150,255,0.9);
+        }
+
+        /* IDENTITAS */
+        .identitas {
+            margin-top: 40px;
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        .identitas a {
+            color: #00c8ff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .identitas a:hover {
+            text-shadow: 0 0 8px #00c8ff;
         }
     </style>
 </head>
@@ -73,6 +104,13 @@
         <div class="menu-box">
             <a class="btn" href="history.html">HISTORY</a>
             <a class="btn" href="live.html">LIVE</a>
+        </div>
+
+        <!-- IDENTITAS -->
+        <div class="identitas">
+            <p>Email: <a href="mailto:anfmultimedia@gmail.com">anfmultimedia@gmail.com</a></p>
+            <p>YouTube: <a href="https://youtube.com" target="_blank">Channel ANF Multimedia</a></p>
+            <p>WhatsApp: <a href="https://wa.me/628*********" target="_blank">+62 8xx-xxxx-xxxx</a></p>
         </div>
     </div>
 </body>
